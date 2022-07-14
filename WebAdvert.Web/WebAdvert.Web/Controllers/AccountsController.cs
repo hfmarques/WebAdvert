@@ -110,5 +110,57 @@ namespace WebAdvert.Web.Controllers
 
             return View(model);
         }
+
+        [HttpGet]
+        public IActionResult ResetPassword(ResetPasswordModel model)
+        {
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("ResetPassword")]
+        public async Task<IActionResult> ResetPasswordPost(ResetPasswordModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await userManager.FindByEmailAsync(model.Email).ConfigureAwait(false);
+
+                if (user is null)
+                {
+                    ModelState.AddModelError("NotFound", "A user with the given email address was not found");
+                    return View(model);
+                }
+
+                await user.ForgotPasswordAsync().ConfigureAwait(false);
+            }
+
+            return RedirectToAction("NewPassword", "Accounts");
+        }
+
+        [HttpGet]
+        public IActionResult NewPassword(NewPasswordModel model)
+        {
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("NewPassword")]
+        public async Task<IActionResult> NewPasswordPost(NewPasswordModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await userManager.FindByEmailAsync(model.Email).ConfigureAwait(false);
+
+                if (user is null)
+                {
+                    ModelState.AddModelError("NotFound", "A user with the given email address was not found");
+                    return View(model);
+                }
+
+                await user.ConfirmForgotPasswordAsync(model.Token, model.NewPassword).ConfigureAwait(false);
+            }
+
+            return RedirectToAction("Login", "Accounts");
+        }
     }
 }

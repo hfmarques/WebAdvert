@@ -11,7 +11,7 @@ namespace WebAdvert.Web.Models.Accounts
 
         [Required(ErrorMessage = "Password is required")]
         [DataType(DataType.Password)]
-        [Display(Name = "Email")]
+        [Display(Name = "Password")]
         public string Password { get; set; }
 
         [Display(Name = "Remember me")] public bool RememberMe { get; set; }
