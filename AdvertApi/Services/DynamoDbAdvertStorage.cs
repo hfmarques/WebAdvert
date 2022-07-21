@@ -49,4 +49,13 @@ public class DynamoDbAdvertStorage : IAdvertStorageService
             await context.DeleteAsync(record);
         }
     }
+
+    public async Task<bool> CheckHealthAsync()
+    {
+        using var client = new AmazonDynamoDBClient();
+
+        var tableData = await client.DescribeTableAsync("Adverts");
+
+        return string.Compare(tableData.Table.TableStatus, "active", true) == 0;
+    }
 }

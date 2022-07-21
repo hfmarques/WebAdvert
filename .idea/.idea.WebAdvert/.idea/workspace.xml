@@ -7,30 +7,13 @@
     <projectFile profileName="IIS Express">AdvertApi/AdvertApi.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="131610d5-0dc6-4e73-bf6a-a0710dbdd5a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdvertApi/Controllers/AdvertController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvertApi/Services/AdvertDbModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvertApi/Services/AdvertProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvertApi/Services/DynamoDbAdvertStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvertApi/Services/IAdvertStorageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Advert/AdvertModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Advert/AdvertStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Advert/ConfirmAdvertModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Advert/CreateAdvertResponse.cs" afterDir="false" />
+    <list default="true" id="131610d5-0dc6-4e73-bf6a-a0710dbdd5a1" name="Changes" comment="Added AdvertApi">
+      <change afterPath="$PROJECT_DIR$/AdvertApi/HealthChecks/StorageHealthChecks.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Controllers/AccountsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/AccountsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Models/Accounts/ConfirmModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Accounts/ConfirmModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Models/Accounts/LoginModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Accounts/LoginModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Models/Accounts/NewPasswordModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Accounts/NewPasswordModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Models/Accounts/ResetPasswordModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Accounts/ResetPasswordModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Models/Accounts/SignupModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Accounts/SignupModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Accounts/Confirm.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Accounts/Confirm.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Accounts/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Accounts/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Accounts/NewPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Accounts/NewPassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Accounts/ResetPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Accounts/ResetPassword.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Accounts/Signup.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Accounts/Signup.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAdvert.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebAdvert.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/AdvertApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/AdvertApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/DynamoDbAdvertStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/DynamoDbAdvertStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/IAdvertStorageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/IAdvertStorageService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/marqueh/Desenvolvimentos/Pessoal/WebAdvert/Web/Controllers/AccountsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/marqueh/Desenvolvimentos/Pessoal/WebAdvert/Web/Controllers/AccountsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
@@ -130,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658432798044</updated>
-      <workItem from="1658432803585" duration="3285000" />
+      <workItem from="1658432803585" duration="4670000" />
     </task>
     <task id="LOCAL-00001" summary="Changed project sln">
       <created>1658432833450</created>
@@ -146,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658433788955</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added AdvertApi">
+      <created>1658436509165</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658436509165</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +160,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Changed project sln" />
     <MESSAGE value="renamed WebAdvert.Web to web" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed WebAdvert.Web to web" />
+    <MESSAGE value="Added AdvertApi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AdvertApi" />
   </component>
 </project>

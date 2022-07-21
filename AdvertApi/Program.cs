@@ -1,9 +1,11 @@
+using AdvertApi.HealthChecks;
 using AdvertApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddHealthChecks().AddCheck<StorageHealthChecks>("Storage");
 builder.Services.AddTransient<IAdvertStorageService, DynamoDbAdvertStorage>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -19,6 +21,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseHealthChecks("/health");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
