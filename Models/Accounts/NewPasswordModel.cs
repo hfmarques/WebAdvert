@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Web.Models.Accounts
+namespace Models.Accounts
 {
     public class NewPasswordModel
     {

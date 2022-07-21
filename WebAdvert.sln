@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{C68E638C-C78D-4076-90BF-87120DA912C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvertApi", "AdvertApi\AdvertApi.csproj", "{FC239FBF-7A34-4E35-B8D3-04C98F0F02B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{B360AAB9-65B2-4165-BCC7-848E1300A606}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{C68E638C-C78D-4076-90BF-87120DA912C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C68E638C-C78D-4076-90BF-87120DA912C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C68E638C-C78D-4076-90BF-87120DA912C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC239FBF-7A34-4E35-B8D3-04C98F0F02B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC239FBF-7A34-4E35-B8D3-04C98F0F02B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC239FBF-7A34-4E35-B8D3-04C98F0F02B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC239FBF-7A34-4E35-B8D3-04C98F0F02B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B360AAB9-65B2-4165-BCC7-848E1300A606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B360AAB9-65B2-4165-BCC7-848E1300A606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B360AAB9-65B2-4165-BCC7-848E1300A606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B360AAB9-65B2-4165-BCC7-848E1300A606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

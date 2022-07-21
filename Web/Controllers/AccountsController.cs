@@ -3,7 +3,7 @@ using Amazon.AspNetCore.Identity.Cognito;
 using Amazon.Extensions.CognitoAuthentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Web.Models.Accounts;
+using Models.Accounts;
 
 namespace Web.Controllers
 {
