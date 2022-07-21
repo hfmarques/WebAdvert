@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebAdvert.Web.Models.Accounts
+namespace Web.Models.Accounts
 {
     public class ResetPasswordModel
     {

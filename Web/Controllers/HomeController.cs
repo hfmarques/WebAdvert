@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using WebAdvert.Web.Models;
+using Web.Models;
 
-namespace WebAdvert.Web.Controllers
+namespace Web.Controllers
 {
     public class HomeController : Controller
     {
