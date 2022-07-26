@@ -5,15 +5,13 @@
     <projectFile profileName="WebAdvert.Web">WebAdvert.Web/WebAdvert.Web.csproj</projectFile>
     <projectFile profileName="AdvertApi">AdvertApi/AdvertApi.csproj</projectFile>
     <projectFile profileName="IIS Express">AdvertApi/AdvertApi.csproj</projectFile>
+    <projectFile profileName="SearchApi">SearchApi/SearchApi.csproj</projectFile>
+    <projectFile profileName="IIS Express">SearchApi/SearchApi.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="131610d5-0dc6-4e73-bf6a-a0710dbdd5a1" name="Changes" comment="Added lambda function">
-      <change afterPath="$PROJECT_DIR$/SearchWorker/ConfigurationHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchWorker/ElasticSearchHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchWorker/appsettings.json" afterDir="false" />
+    <list default="true" id="131610d5-0dc6-4e73-bf6a-a0710dbdd5a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchWorker/SearchWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchWorker/SearchWorker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchWorker/SearchWorker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchWorker/SearchWorker.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAdvert.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebAdvert.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,36 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="SearchApi" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/SearchApi/SearchApi.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="SearchApi" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="SearchApi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/SearchApi/SearchApi.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="WebAdvert.Web" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Web/Web.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
@@ -117,7 +145,7 @@
       <workItem from="1658592976592" duration="5607000" />
       <workItem from="1658747734153" duration="593000" />
       <workItem from="1658785459140" duration="3870000" />
-      <workItem from="1658864436155" duration="3220000" />
+      <workItem from="1658864436155" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="Changed project sln">
       <created>1658432833450</created>
@@ -175,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658868056074</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finished lambda function">
+      <created>1658869660726</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658869660726</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +239,7 @@
     <MESSAGE value="added automapper and polly to call advert api" />
     <MESSAGE value="Added Lambda function" />
     <MESSAGE value="Added lambda function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lambda function" />
+    <MESSAGE value="Finished lambda function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished lambda function" />
   </component>
 </project>
