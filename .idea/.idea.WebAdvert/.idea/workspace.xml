@@ -7,15 +7,13 @@
     <projectFile profileName="IIS Express">AdvertApi/AdvertApi.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="131610d5-0dc6-4e73-bf6a-a0710dbdd5a1" name="Changes" comment="">
+    <list default="true" id="131610d5-0dc6-4e73-bf6a-a0710dbdd5a1" name="Changes" comment="Added lambda function">
+      <change afterPath="$PROJECT_DIR$/SearchWorker/ConfigurationHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SearchWorker/ElasticSearchHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SearchWorker/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvertApi/AdvertApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/AdvertApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvertApi/Controllers/AdvertController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Controllers/AdvertController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/AdvertDbModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/AdvertDbModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/DynamoDbAdvertStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/DynamoDbAdvertStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/IAdvertStorageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/IAdvertStorageService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Advert/ConfirmAdvertModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Advert/ConfirmAdvertModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAdvert.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebAdvert.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchWorker/SearchWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchWorker/SearchWorker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchWorker/SearchWorker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchWorker/SearchWorker.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <workItem from="1658592976592" duration="5607000" />
       <workItem from="1658747734153" duration="593000" />
       <workItem from="1658785459140" duration="3870000" />
-      <workItem from="1658864436155" duration="1560000" />
+      <workItem from="1658864436155" duration="3220000" />
     </task>
     <task id="LOCAL-00001" summary="Changed project sln">
       <created>1658432833450</created>
@@ -163,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658788095839</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Lambda function">
+      <created>1658868038931</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658868038931</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added lambda function">
+      <created>1658868056074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658868056074</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +202,8 @@
     <MESSAGE value="AddHealthChecks" />
     <MESSAGE value="Added automapper and polly to call advert api" />
     <MESSAGE value="added automapper and polly to call advert api" />
-    <option name="LAST_COMMIT_MESSAGE" value="added automapper and polly to call advert api" />
+    <MESSAGE value="Added Lambda function" />
+    <MESSAGE value="Added lambda function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lambda function" />
   </component>
 </project>
