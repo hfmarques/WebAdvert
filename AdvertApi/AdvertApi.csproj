@@ -9,6 +9,7 @@
     <ItemGroup>
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
         <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.3.59" />
+        <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.3.84" />
         <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.7" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>

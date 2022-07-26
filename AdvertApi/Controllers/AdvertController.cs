@@ -1,6 +1,9 @@
-﻿using AdvertApi.Services;
+﻿using System.Text.Json;
+using AdvertApi.Services;
+using Amazon.SimpleNotificationService;
 using Microsoft.AspNetCore.Mvc;
 using Models.Advert;
+using Models.Messages;
 
 namespace AdvertApi.Controllers;
 
@@ -9,10 +12,12 @@ namespace AdvertApi.Controllers;
 public class AdvertController : ControllerBase
 {
     private readonly IAdvertStorageService advertStorageService;
+    private readonly IConfiguration configuration;
 
-    public AdvertController(IAdvertStorageService advertStorageService)
+    public AdvertController(IAdvertStorageService advertStorageService, IConfiguration configuration)
     {
         this.advertStorageService = advertStorageService;
+        this.configuration = configuration;
     }
 
     [HttpPost]
@@ -22,7 +27,7 @@ public class AdvertController : ControllerBase
     {
         try
         {
-            var recordId = await advertStorageService.Add(model);
+            var recordId = await advertStorageService.AddAsync(model);
             return Created("", new CreateAdvertResponse {Id = recordId});
         }
         catch (KeyNotFoundException)
@@ -42,7 +47,8 @@ public class AdvertController : ControllerBase
     {
         try
         {
-            await advertStorageService.Confirm(model);
+            await advertStorageService.ConfirmAsync(model);
+            await RaiseAdvertConfirmedMessage(model);
             return Ok(model);
         }
         catch (KeyNotFoundException)
@@ -53,5 +59,20 @@ public class AdvertController : ControllerBase
         {
             return BadRequest(e.Message);
         }
+    }
+
+    private async Task RaiseAdvertConfirmedMessage(ConfirmAdvertModel model)
+    {
+        var topicArn = configuration["TopicArn"];
+
+        using var client = new AmazonSimpleNotificationServiceClient();
+        var dbModel = await advertStorageService.GetByIdAsync(model.Id);
+
+        var message = new AdvertConfirmedMessage
+        {
+            Id = model.Id,
+            Title = dbModel.Title,
+        };
+        await client.PublishAsync(topicArn, JsonSerializer.Serialize(message));
     }
 }

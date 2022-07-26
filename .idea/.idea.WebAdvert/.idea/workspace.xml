@@ -8,18 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="131610d5-0dc6-4e73-bf6a-a0710dbdd5a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/Advert/CreateAdvertViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Controllers/AdvertManagementController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/ServiceClients/AdvertApiClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/ServiceClients/IAdvertApiClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Services/IFileUploader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Services/S3FileUploader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Views/AdvertManagement/Create.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebAdvert/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/AdvertApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/AdvertApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/Controllers/AdvertController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Controllers/AdvertController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/AdvertDbModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/AdvertDbModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/DynamoDbAdvertStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/DynamoDbAdvertStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdvertApi/Services/IAdvertStorageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdvertApi/Services/IAdvertStorageService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Advert/ConfirmAdvertModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Advert/ConfirmAdvertModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAdvert.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebAdvert.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +118,8 @@
       <workItem from="1658432803585" duration="5098000" />
       <workItem from="1658592976592" duration="5607000" />
       <workItem from="1658747734153" duration="593000" />
-      <workItem from="1658785459140" duration="2153000" />
+      <workItem from="1658785459140" duration="3870000" />
+      <workItem from="1658864436155" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="Changed project sln">
       <created>1658432833450</created>
@@ -152,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658437852916</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added automapper and polly to call advert api">
+      <created>1658788066400</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658788066400</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added automapper and polly to call advert api">
+      <created>1658788095839</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658788095839</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +188,8 @@
     <MESSAGE value="renamed WebAdvert.Web to web" />
     <MESSAGE value="Added AdvertApi" />
     <MESSAGE value="AddHealthChecks" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddHealthChecks" />
+    <MESSAGE value="Added automapper and polly to call advert api" />
+    <MESSAGE value="added automapper and polly to call advert api" />
+    <option name="LAST_COMMIT_MESSAGE" value="added automapper and polly to call advert api" />
   </component>
 </project>
